@@ -1,0 +1,180 @@
+body,
+a{ 
+    font-family: 'Amatic SC', cursive;
+    color: ;
+    line-height: 1,5px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+
+
+}
+
+header p{
+    font-size: 40px;
+}
+
+.hlavicka{
+    background-image: url(obr/K+F.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px 120px 350px 0px;
+}
+.a{
+    padding: 0 500px 0 0;
+    font-size: 30px;
+}
+
+.b {
+    padding-left: 850px;
+    font-size: 40px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    text-decoration: underline dotted white;
+}
+h1 {
+    font-size: 80px;
+    padding: 0 500px 0 0;
+    text-decoration: none;
+    }
+h2{
+    font-size: 70px;
+}
+h3{
+    font-size: 50px;
+}
+.obrad h2,
+.ostatni h3{
+    padding-top: 50px;
+    margin: 0;
+}
+
+.onas,
+.program,
+.dary,
+.mapa {
+    background-color: rgb(252, 183, 198);
+}
+
+.onas img {
+    float: left;
+    width: 40%;
+    height: 40%;
+    
+    margin: 0, 30px, 30px, 0;
+    border-radius: 50%;
+    padding: 20px;
+    border: 6px dotted white;
+}
+
+.onas p {
+   margin: 30px;
+}
+.boxonas{
+    overflow: auto;
+    padding: 30px 0 0 0;
+}
+
+
+section{
+    padding: 50px 15%;
+    overflow: auto;
+}
+ 
+.foto{ 
+    padding: 0px;
+    background-color:   rgb(252, 183, 198);
+}
+
+table{
+    padding: 20px 0;
+    border-spacing: 0;
+    margin: 0px auto;
+}
+
+
+.obrad,
+.ostatni,
+.mapa2{
+    background-color:rgb(177, 241, 143);
+}
+
+.obrad{
+    padding-bottom: 55px;
+}
+th,
+td{
+    padding-left: 25px; 
+}
+
+
+.paticka {
+    background-color: rgb(40, 36, 37);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.paticka p{
+    font-size: 30px;
+}
+
+.foto img{
+    width: 100%;
+    height: 900px;
+}
+
+
+.mapa,
+.mapa2 {
+    padding: 0;
+}
+
+.mapa p,
+.mapa2 p {
+    margin: 0;
+}
+
+.ostatni h3{
+    padding-top: 20px;
+    text
+}
+
+
+.dary{
+    padding-bottom: 50px;
+}
+
+#zoidberg #dance {
+    display: none;
+}
+   
+#zoidberg:hover #dance {
+    display: block;
+  }
+
+.kral {
+    background-color:  rgb(177, 241, 143);
+    background-image: url(obr/kf5.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 0;
+}
+
+.lightgallery {
+    box-sizing: border-box; 
+    display: block;
+}
+
+.galerie {
+    background-color: rgb(177, 241, 143);
+}
