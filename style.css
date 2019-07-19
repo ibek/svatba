@@ -23,12 +23,12 @@ header p{
     padding: 100px 120px 350px 0px;
 }
 .a{
-    padding: 0 500px 0 0;
+    padding: 0 550px 0 0;
     font-size: 30px;
 }
 
 .b {
-    padding-left: 850px;
+    text-align: right;
     font-size: 40px;
 }
 
@@ -176,4 +176,43 @@ td{
 
 .galerie {
     background-color: rgb(177, 241, 143);
+}
+
+@media only screen and (max-width: 600px) {
+    .hlavicka{
+    padding: 20px 0px 20px 0px;
+}
+.a{
+    padding: 0px;
+    font-size: 30px;
+}
+.a, .b {
+    background-color:rgba(255, 255, 255, 0.4);
+    width: 100%;
+}
+header p{
+    font-size: 30px;
+}
+body,
+a{ 
+    font-family: 'Amatic SC', cursive;
+    color: ;
+    line-height: 1,5px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+
+
+}
+.b {
+    text-align: right;
+    font-size: 30px;
+}
+section {
+    padding: 10px;
+}
+.boxonas {
+    clear: both;
+}
 }

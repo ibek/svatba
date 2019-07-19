@@ -1,8 +1,8 @@
 const body = document.querySelector("body");
 const images = document.querySelectorAll(".gg-box img");
 const l = images.length;
-for(var i = 0; i < l; i++) {
-    images[i].addEventListener("click", function(i) {
+
+function imageClick(i) {
         const boxContainer = document.querySelector("#gg-screen");
         var route = this.src;
         var currentImg = this;
@@ -36,16 +36,26 @@ for(var i = 0; i < l; i++) {
             nextBtn.hidden = true;
         }
         boxImg.innerHTML = '<img src="' + route + '">';
-        boxContainer.addEventListener("click", function(e){
+        boxContainer.addEventListener("click", function (e){
             if (e.target == this || e.target == close){
               boxContainer.hidden = true;
               body.style.overflow = 'auto';
             }
-        });
+});
+        boxContainer.addEventListener("touchstart", function (e){
+              boxContainer.hidden = true;
+              body.style.overflow = 'auto';
+});
         prevBtn.addEventListener("click", function(){
             prev();
         });
+        prevBtn.addEventListener("touchstart", function(){
+            prev();
+        });
         nextBtn.addEventListener("click", function(){
+            next();
+        });
+        nextBtn.addEventListener("touchstart", function(){
             next();
         });
         body.addEventListener("keydown", function(e){
@@ -84,5 +94,9 @@ for(var i = 0; i < l; i++) {
                 prevBtn.hidden = false;
             }
         };
-  });
+  }
+
+for(var i = 0; i < l; i++) {
+    images[i].addEventListener("click", imageClick);
+    images[i].addEventListener("touchstart", imageClick);
 }
