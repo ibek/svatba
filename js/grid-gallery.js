@@ -43,8 +43,10 @@ function imageClick(i) {
             }
 });
         boxContainer.addEventListener("touchend", function (e){
+        
               boxContainer.hidden = true;
               body.style.overflow = 'auto';
+        e.preventDefault();
 });
         prevBtn.addEventListener("click", function(){
             prev();
@@ -94,6 +96,7 @@ function imageClick(i) {
                 prevBtn.hidden = false;
             }
         };
+        i.preventDefault();
   }
 
 for(var i = 0; i < l; i++) {
