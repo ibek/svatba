@@ -42,20 +42,20 @@ function imageClick(i) {
               body.style.overflow = 'auto';
             }
 });
-        boxContainer.addEventListener("touchstart", function (e){
+        boxContainer.addEventListener("touchend", function (e){
               boxContainer.hidden = true;
               body.style.overflow = 'auto';
 });
         prevBtn.addEventListener("click", function(){
             prev();
         });
-        prevBtn.addEventListener("touchstart", function(){
+        prevBtn.addEventListener("touchend", function(){
             prev();
         });
         nextBtn.addEventListener("click", function(){
             next();
         });
-        nextBtn.addEventListener("touchstart", function(){
+        nextBtn.addEventListener("touchend", function(){
             next();
         });
         body.addEventListener("keydown", function(e){
@@ -98,5 +98,5 @@ function imageClick(i) {
 
 for(var i = 0; i < l; i++) {
     images[i].addEventListener("click", imageClick);
-    images[i].addEventListener("touchstart", imageClick);
+    images[i].addEventListener("touchend", imageClick);
 }
