@@ -16,11 +16,12 @@ header p{
 }
 
 .hlavicka{
-    background-image: url(obr/K+F.jpg);
+    background-image: url(obr/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding: 100px 120px 350px 0px;
+    color: white;
 }
 .a{
     padding: 0 550px 0 0;
